@@ -23,15 +23,39 @@
 	  color: white;
 	  font-size: 30pt;
 	}
+	
+   *{
+	  box-sizing: border-box;
+	}
+
+	.column 
+	{
+	  float: left;
+	  width: 33.33%;
+	  padding: 5px;
+	}
+
+	.row::after 
+	{
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
 </style>
 
 	<p><strong>BlackSqareFeet.com</strong></p>
 	<br>
 	<br>
-	<div class="feet">
-		<img src="black_square_foot2.png" width="800" height="800">
-		<img src="black_square_foot.png" width="800" height="800">
+	<div class="row">
+	  <div class="column">
+		<img src="black_square_foot2.png" style="width:100%">
+	  </div>
+	  <div class="column">
+		<img src="black_square_foot.png" style="width:100%">
+	  </div>
 	</div>
+		
+		
 
 </body>
 </html>
